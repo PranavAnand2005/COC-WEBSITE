@@ -136,7 +136,10 @@ const thumbs = document.querySelectorAll('.thumb');
 function updateCharacter(index) {
   const char = characters[index];
   titleEl.textContent = char.title;
+  titleEl.style.fontFamily = "'Clashfont', serif";
+  titleEl.style.fontSize = "7rem";
   descEl.textContent = char.desc;
+  descEl.style.fontSize = "1.6rem";
   imgEl.style.opacity = 0;
   setTimeout(() => {
     imgEl.src = char.img;

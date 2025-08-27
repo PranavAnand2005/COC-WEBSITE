@@ -516,7 +516,7 @@ body {
 
 /* adding fonts */
 @font-face {
-    font-family: 'MyCustomFont';
+    font-family: 'Clashfont';
     src: url('font/Clash_Regular.otf') format('opentype'),
         url('font/Clash_Bold.otf') format('opentype');
     font-weight: normal;
@@ -559,7 +559,7 @@ body {
 }
 
 .features-section h1 {
-    font-family: 'MyCustomFont', sans-serif;
+    font-family: 'Clashfont', sans-serif;
     font-weight: 900;
     font-size: 100px;
     max-width: 1150px;
@@ -703,6 +703,11 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;  /* Allow wrapping for smaller screens */
+}
+
+#character-title{
+    font-family: 'Clashfont', sans-serif;
+    font-size: 7rem;
 }
 
 .character-text {
