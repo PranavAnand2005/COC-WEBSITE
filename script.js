@@ -137,9 +137,13 @@ function updateCharacter(index) {
   const char = characters[index];
   titleEl.textContent = char.title;
   titleEl.style.fontFamily = "'Clashfont', serif";
+  titleEl.style.fontWeight = "700"; //bold
   titleEl.style.fontSize = "7rem";
   descEl.textContent = char.desc;
-  descEl.style.fontSize = "1.6rem";
+  descEl.style.fontWeight = "400"; //regular
+  descEl.style.fontFamily = "'Clashfont', serif";
+  descEl.style.fontSize = "1.2rem";
+  descEl.style.fontSizeAdjust = "0.7";
   imgEl.style.opacity = 0;
   setTimeout(() => {
     imgEl.src = char.img;

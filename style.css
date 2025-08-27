@@ -517,11 +517,18 @@ body {
 /* adding fonts */
 @font-face {
     font-family: 'Clashfont';
-    src: url('font/Clash_Regular.otf') format('opentype'),
-        url('font/Clash_Bold.otf') format('opentype');
-    font-weight: normal;
+    src: url('font/Clash_Regular.otf') format('opentype');
+    font-weight: 400; /* regular */
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'Clash';
+  src: url('font/Clash_Bold.otf') format('opentype');
+  font-weight: 700;  /* bold */
+  font-style: normal;
+}
+
 
 
 
@@ -706,8 +713,16 @@ body {
 }
 
 #character-title{
-    font-family: 'Clashfont', sans-serif;
+    font-family: 'Clashfont', serif;
+    font-weight: 700; /* bold */
     font-size: 7rem;
+}
+
+#char-description{
+    font-family: 'Clashfont', serif;
+    font-weight: 400; /* regular */
+    font-size: 1.2rem;
+    font-size-adjust: 0.7;
 }
 
 .character-text {
